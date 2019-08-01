@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Python Tips</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link type="" rel="stylesheet" href="{% static 'pythontips/style.css' %}">
+    <style>
+
+</style>
+</head>
+
+<body>
+    <div class="container">
+<div><a href="/">Home</a></div>
+        <div class="header">
+            <h2>Python Tips</h2>
+        </div>
+        <div class="row">
+
+            {% if tips %}
+            <div>
+                {% for tip in tips %}
+                <div>
+                        ({{ tip.id }})
+                        Tweet: <a href="/pythontips/{{tip_id}}/">{{ tip.tip_text}}</a><br>
+                        Links: {{ tip.tip_link }} <br>
+                        Author: {{ tip.tip_author }} &nbsp; &nbsp; Published: {{ tip.tip_timestamp }}<br>
+                </div>
+                {% endfor %}
+            </div>
+            {% else %}
+                <p>No tips available on record!</p>
+            {% endif %}
+        </div>
+    </div>
+</body>
