@@ -15,7 +15,7 @@
 
 <body>
     <div class="container">
-<div><a href="/">Home</a></div>
+<a href="/">Home</a>
         <div class="header">
             <h2>Python Tips</h2>
         </div>
@@ -27,8 +27,9 @@
                 <div>
                         ({{ tip.id }})
                         Tweet: <a href="/pythontips/{{tip_id}}/">{{ tip.tip_text}}</a><br>
-                        Links: {{ tip.tip_link }} <br>
-                        Author: {{ tip.tip_author }} &nbsp; &nbsp; Published: {{ tip.tip_timestamp }}<br>
+                        Links: {{ tip.tip_link }} &nbsp; &nbsp;
+                        Author: {{ tip.tip_author }} &nbsp; &nbsp;
+                        Published: {{ tip.tip_timestamp }}<br>
                 </div>
                 {% endfor %}
             </div>

@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
+# pylint: disable=no-member
+
 # import tweepy
 import sqlite3
 from django.shortcuts import render

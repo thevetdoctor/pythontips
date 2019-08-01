@@ -1,5 +1,5 @@
-# import tweepy
-# import sqlite3
+# pylint: disable=import-error, no-member
+
 import twitter
 # from datetime import datetime
 from dateutil import parser
