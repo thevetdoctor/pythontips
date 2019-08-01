@@ -6,13 +6,13 @@ A web app that make it easier to navigate the collection of tips on @python_tip
 
 Download or Clone repository
 
-- Navigate into repo
+#Navigate into repo
 cd tipsdaily
 
-- Activate virtual enviroment
+#Activate virtual enviroment
 Run: mydjangoenv/Scripts/activate
 
-- Run server
+#Run server
 Run: python manage.py runserver
 
 
